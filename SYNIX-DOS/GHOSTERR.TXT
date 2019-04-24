@@ -1,0 +1,507 @@
+*********************************
+Date   : Tue Dec 16 15:31:12 2008
+Error Number: (653)
+Message: Partition not large enough during NTFS load.
+Operation aborted at user request.
+
+Version: 11.0.1.1533 (Apr 19 2007, Build=1533)
+OS Version: DOS v7.10
+Command line arguments:
+Active Switches :
+       AutoName
+PathName            : 
+DumpFile            : 2.1:\NEW.GHO
+DumpPos             : 7716
+Last LFO Buffersize : 32768
+Last LFO Path       : 
+  Full Path         : 2.1:\NEW.GHO
+  Disk:Partition    : 2:1
+Last LFO Filesystem : Proprietary
+FlagImplode         : 0
+FlagExplode         : 3
+
+Operation Details :
+  Total size.........0
+  MB copied..........0
+  MB remaining.......0
+  Percent complete...0%
+  Speed..............0 MB/min
+  Time elapsed.......0:00   
+  Time remaining.....0:00   
+
+Smartdrive detected
+  .. Smartdrive disabled
+Program Call Stack
+AbortLog
+Generic_Abort
+loadVol
+LoadNTFSPartition
+ProcessNTFSPartition
+CopyPartition
+CopyFileToPart
+CopyMainline
+AttemptOperation
+sub_main
+main
+
+Call Stack
+  0x00397a4c
+  0x0009cd91
+  0x0009c5cc
+  0x0009bca7
+  0x0009d8ea
+  0x0004e2d1
+  0x0004d6fe
+  0x000173e9
+  0x000197d5
+  0x000c9984
+  0x000c8cda
+  0x00002232
+  0x00002374
+  0x00005057
+  0x00003f2f
+  0x003a0c78
+End Call Stack
+
+
+Start heap available: 509149184
+Cur   heap available: 441188352
+Total Memory:         516685824
+
+Allocated
+   1024 DpmiDjgpp.cpp:56
+  33504 ghost.cpp:1396
+     48 DiskDriveAccessExInt13.cpp:139
+    528 IdeDmaServerPci.cpp:127
+    528 IdeDmaServerPci.cpp:127
+     32 DiskDriveAccessExInt13.cpp:139
+Free
+     16 MsdosLfoFilesystem.cpp:408
+    512 DiskDriveAccessInt13.cpp:184
+   1024 DiskDriveAccessExInt13.cpp:223
+   2048 DiskDriveAccessExInt13.cpp:223
+  32768 BlockDeviceDosDrive.cpp:392
+
+Fat details:
+
+NTFS details:
+----------------
+
+NTFS Global Flags:
+----------------
+	 contiguousWrite=1 forceDiskClusterMapping=0 
+	 inhibitCHKDSK=1 ignoreBadLog=0 ignoreCHKDSKBit=0
+	 enable_cache=0 xfrbuflen=33000 
+	 last_attr_type = 0 
+	 loadExact = 0 
+----------------
+	=======================================================
+	NTFS volume 0:
+	----------------
+	initialised..............1
+	read cached..............N
+	Selective caching........N
+	flags....................Volume OK
+	drive....................0x00
+	part order...............0
+	version..................0x0400
+	volsize..................20985855
+	blocksize................512
+	clusterfactor............8
+	clustersize..............4096
+	mftrecordsize............1024
+	indexrecordsize..........4096
+	indexclustperrecord......1
+	bootSectorCopyOffset.....20985855
+	pagefileSys..............-1
+	bootIni..................3649
+	volumeLabel..............[Baby's Win]
+	sectorsInUse.............11019072
+	totalNonCopiedBytes......0
+	bytesToCopy..............0
+	bitmapClusters...........120
+	bitmapUsedBytes..........491488
+	estimatedClusters........120
+	estimatedUsedBytes.......491488
+	clustersizeShift.........12
+	blocksizeShift...........9
+	mftrecordsizeShift.......10
+	indexrecordsizeShift.....12
+	totalRootMftRecs.........32827
+	clustermap failover......N
+	Boot sector details
+		name....................[NTFS    ]
+		blocksize...............512
+		clusterfactor...........8
+		reservedSectorsUnused...0
+		mediaType...............0xf8
+		secPerTrack.............63
+		numHeads................255
+		hiddenSectors...........2048
+		volsize.................20985855
+		mftcluster..............0
+		mftmirrorcluster........0
+		clustersPerMFTRecord....246
+		clustersPerIndexBuffer..1
+
+		---------------------------------------------------
+		Cluster Allocation Map
+		---------------------------------------------------
+		Start: 2623231 Length: 0 Next: 2623231
+
+
+	=======================================================
+
+Disk Info :
+  remote.............0
+  drive..............0
+  sectorsUsedCount.......117204967
+  estimatedUsedCount.....126700353
+  numPartitions..............1
+  Version............1101
+
+ # Ord Boot Id Ext     First        Num       Last       Used NTFS
+ 0  0    0   7 No         63   31455207   31455270   11019072 Yes
+
+Disk Info :
+  remote.............0
+  drive..............0
+  sectorsUsedCount.......117204992
+  estimatedUsedCount.....0
+  numPartitions..............3
+  Version............0
+
+ # Ord Boot Id Ext     First        Num       Last       Used NTFS
+ 0  0    0   7 No       2048   20985856   20987904   20985856 Yes
+ 1  1    0   6 No   20987904   10469376   31457280   10469376 No
+ 2  2    1  af No   31457280   85749760  117207040   85749760 No
+
+Fixed Drives
+
+Drive 128 HTS541060G9SA00       MPBCL0XGHL4GKM
+Int 13h
+Total Sectors            16434495
+Bytes per Sector         512
+MB                       8024
+Cylinders                1023
+Heads                    255
+Sectors per Track        63
+Successful IO Count      0
+
+Extended Int 13h
+Total Sectors            117210240
+Bytes per Sector         512
+MB                       57231
+Successful IO Count      0
+
+IDE using PIO
+Total Sectors            117210240
+Bytes per Sector         512
+MB                       57231
+Cylinders                16383
+Heads                    16
+Sectors per Track        63
+Successful IO Count      0
+
+IDE using UDMA (Active)
+Total Sectors            117210240
+Bytes per Sector         512
+MB                       57231
+Cylinders                16383
+Heads                    16
+Sectors per Track        63
+Successful IO Count      129
+
+Drive 129
+Int 13h
+Total Sectors            8241345
+Bytes per Sector         512
+MB                       4024
+Cylinders                513
+Heads                    255
+Sectors per Track        63
+Successful IO Count      0
+
+Extended Int 13h (Active)
+Total Sectors            156301488
+Bytes per Sector         512
+MB                       76319
+Cylinders                9729
+Heads                    255
+Sectors per Track        63
+Successful IO Count      712
+
+Floppy Drives
+
+Drive 0
+Int 13h (Active)
+Total Sectors            30720
+Bytes per Sector         512
+MB                       15
+Cylinders                15
+Heads                    64
+Sectors per Track        32
+Successful IO Count      1
+
+Remote Drives
+AsyncIo : 1
+Image Devices
+
+Key[1]   2.1:
+Key[2]   2:1
+Path     2.1:
+Desc     2.1: [Leask's Data]
+Type     NTFS
+Disk     1
+Offset   63
+
+Key[1]   A:
+Path     A:
+Desc     A:
+Type     Floppy
+
+Key[1]   C:
+Path     C:
+Desc     C: []
+Type     Disk
+
+Key[1]   @CD-R1
+Path     @CD-R1
+Desc     @CD-R1 PIONEER DVDRW   DVR-K16 
+Type     DVD
+
+
+ConvMemoryAllocationFactoryDpmi diagnostic...
+=============================================
+
+Conventional Memory
+Initial Conventional Memory Size = 450544
+Current Conventional Memory Size = 315376
+
+Allocated
+   1024 DpmiDjgpp.cpp:56
+  33504 ghost.cpp:1396
+     48 DiskDriveAccessExInt13.cpp:139
+    528 IdeDmaServerPci.cpp:127
+    528 IdeDmaServerPci.cpp:127
+     32 DiskDriveAccessExInt13.cpp:139
+Free
+     16 MsdosLfoFilesystem.cpp:408
+    512 DiskDriveAccessInt13.cpp:184
+   1024 DiskDriveAccessExInt13.cpp:223
+   2048 DiskDriveAccessExInt13.cpp:223
+  32768 BlockDeviceDosDrive.cpp:392
+
+
+DiskManager diagnostic...
+=========================
+
+Fixed Drives
+
+Drive 128 HTS541060G9SA00       MPBCL0XGHL4GKM
+Int 13h
+Total Sectors            16434495
+Bytes per Sector         512
+MB                       8024
+Cylinders                1023
+Heads                    255
+Sectors per Track        63
+Successful IO Count      0
+
+Extended Int 13h
+Total Sectors            117210240
+Bytes per Sector         512
+MB                       57231
+Successful IO Count      0
+
+IDE using PIO
+Total Sectors            117210240
+Bytes per Sector         512
+MB                       57231
+Cylinders                16383
+Heads                    16
+Sectors per Track        63
+Successful IO Count      0
+
+IDE using UDMA (Active)
+Total Sectors            117210240
+Bytes per Sector         512
+MB                       57231
+Cylinders                16383
+Heads                    16
+Sectors per Track        63
+Successful IO Count      139
+
+Drive 129
+Int 13h
+Total Sectors            8241345
+Bytes per Sector         512
+MB                       4024
+Cylinders                513
+Heads                    255
+Sectors per Track        63
+Successful IO Count      0
+
+Extended Int 13h (Active)
+Total Sectors            156301488
+Bytes per Sector         512
+MB                       76319
+Cylinders                9729
+Heads                    255
+Sectors per Track        63
+Successful IO Count      712
+
+Floppy Drives
+
+Drive 0
+Int 13h (Active)
+Total Sectors            30720
+Bytes per Sector         512
+MB                       15
+Cylinders                15
+Heads                    64
+Sectors per Track        32
+Successful IO Count      1
+
+The following devices do not use an IRQ: 
+   (0x00, 0x00, 0x00):   IRQ: 0x00, INT#: -, Link: 0x00
+      Class: Bridge, SubClass: Host/PCI
+      Vendor: 0x8086, Device: 0x2590
+   (0x00, 0x02, 0x01):   IRQ: 0x00, INT#: -, Link: 0x00
+      Class: Display, SubClass: Other Display
+      Vendor: 0x8086, Device: 0x2792, RoutePINS: 0x60, 0x00, 0x00, 0x00, 
+   (0x00, 0x1e, 0x00):   IRQ: 0xff, INT#: -, Link: 0x00
+      Class: Bridge, SubClass: Sub Decode PCI/PCI
+      Vendor: 0x8086, Device: 0x2448, RoutePINS: 0x61, 0x68, 0x00, 0x00, 
+   (0x00, 0x1f, 0x00):   IRQ: 0x00, INT#: -, Link: 0x00
+      Class: Bridge, SubClass: PCI/ISA
+      Vendor: 0x8086, Device: 0x2641, RoutePINS: 0x62, 0x63, 0x00, 0x00, 
+The following hard wire-ord devices share IRQ 10:
+   (0x00, 0x02, 0x00):   IRQ: 0x0a, INT#: A, Link: 0x60
+      Class: Display, SubClass: VGA compatible
+      Vendor: 0x8086, Device: 0x2592, RoutePINS: 0x60, 0x00, 0x00, 0x00, 
+   (0x00, 0x1b, 0x00):   IRQ: 0x0a, INT#: A, Link: 0x60
+      Class: Multimedia, SubClass: Unknown Multimedia
+      Vendor: 0x8086, Device: 0x2668, RoutePINS: 0x60, 0x00, 0x00, 0x00, 
+   (0x00, 0x1c, 0x00):   IRQ: 0x0a, INT#: A, Link: 0x60
+      Class: Bridge, SubClass: PCI/PCI
+      Vendor: 0x8086, Device: 0x2660, RoutePINS: 0x60, 0x61, 0x62, 0x63, 
+   (0x00, 0x1d, 0x03):   IRQ: 0x0a, INT#: D, Link: 0x60
+      Class: Serial Bus, SubClass: USB UHCI
+      Vendor: 0x8086, Device: 0x265b, RoutePINS: 0x6b, 0x63, 0x62, 0x60, 
+The following hard wire-ord devices share IRQ 5:
+   (0x00, 0x1d, 0x02):   IRQ: 0x05, INT#: C, Link: 0x62
+      Class: Serial Bus, SubClass: USB UHCI
+      Vendor: 0x8086, Device: 0x265a, RoutePINS: 0x6b, 0x63, 0x62, 0x60, 
+   (0x01, 0x0a, 0x00):   IRQ: 0x05, INT#: A, Link: 0x62
+      Class: Serial Bus, SubClass: IEEE 1394 OpenHCI
+      Vendor: 0x104c, Device: 0x8023, RoutePINS: 0x62, 0x00, 0x00, 0x00, 
+The following hard wire-ord devices share IRQ 3:
+   (0x00, 0x1d, 0x01):   IRQ: 0x03, INT#: B, Link: 0x63
+      Class: Serial Bus, SubClass: USB UHCI
+      Vendor: 0x8086, Device: 0x2659, RoutePINS: 0x6b, 0x63, 0x62, 0x60, 
+   (0x00, 0x1f, 0x02):   IRQ: 0x00, INT#: B, Link: 0x63
+      Class: Mass Storage, SubClass: IDE Controller
+      Vendor: 0x8086, Device: 0x2653, RoutePINS: 0x62, 0x63, 0x00, 0x00, 
+   (0x00, 0x1f, 0x03):   IRQ: 0x0a, INT#: B, Link: 0x63
+      Class: Serial Bus, SubClass: SMBUS
+      Vendor: 0x8086, Device: 0x266a, RoutePINS: 0x62, 0x63, 0x00, 0x00, 
+   (0x01, 0x0c, 0x00):   IRQ: 0x03, INT#: A, Link: 0x63
+      Class: Network, SubClass: Ethernet
+      Vendor: 0x10ec, Device: 0x8139, RoutePINS: 0x63, 0x00, 0x00, 0x00, 
+The following hard wire-ord devices share IRQ 7:
+   (0x01, 0x03, 0x00):   IRQ: 0x07, INT#: A, Link: 0x69
+      Class: Network, SubClass: Ethernet
+      Vendor: 0x168c, Device: 0x0013, RoutePINS: 0x69, 0x61, 0x00, 0x00, 
+The following hard wire-ord devices share IRQ 11:
+   (0x00, 0x1d, 0x00):   IRQ: 0x0b, INT#: A, Link: 0x6b
+      Class: Serial Bus, SubClass: USB UHCI
+      Vendor: 0x8086, Device: 0x2658, RoutePINS: 0x6b, 0x63, 0x62, 0x60, 
+   (0x00, 0x1d, 0x07):   IRQ: 0x0b, INT#: A, Link: 0x6b
+      Class: Serial Bus, SubClass: USB EHCI
+      Vendor: 0x8086, Device: 0x265c, RoutePINS: 0x6b, 0x63, 0x62, 0x60, 
+
+>> Found Mass storage & network controller hard wire-ord together !!
+
+
+FilesystemManager diagnostic...
+===============================
+
+Volume 1
+VolumePos: 2.1:
+DriveLetter: 
+Description:   74.53GB Primary Disk 1 Offset   31.50KB   74.53GB
+Type:        fsfNtfsWindowsXP
+Name:        Leask's Data
+
+Volume 2
+VolumePos: 1.1:
+DriveLetter: 
+Description:   10.01GB Primary Disk 0 Offset       1MB   10.01GB HTS541060G9SA00       MPBCL0XGHL4GKM
+Volume Inaccessible
+
+
+FilesystemMounter diagnostic...
+===============================
+
+
+LfoFilesystemManager diagnostic...
+==================================
+
+Filesystem Index: 0
+Filesystem Descriptor:
+  ID's:
+    ID Type: 2
+    ID: A:
+  DriveType: 2
+  No FilesystemInfo structure.
+  Filesystem has no VolumePtr
+
+Filesystem Index: 1
+Filesystem Descriptor:
+  ID's:
+    ID Type: 2
+    ID: C:
+  DriveType: 4
+  No FilesystemInfo structure.
+  Filesystem has no VolumePtr
+
+Filesystem Index: 2
+Filesystem Descriptor:
+  ID's:
+    ID Type: 1
+    ID: 1.1:
+  DriveType: 4
+  No FilesystemInfo structure.
+  Filesystem is inaccessible.
+
+Filesystem Index: 3
+Filesystem Descriptor:
+  ID's:
+    ID Type: 1
+    ID: 1.2:
+  DriveType: 4
+  No FilesystemInfo structure.
+
+Filesystem Index: 4
+Filesystem Descriptor:
+  ID's:
+    ID Type: 1
+    ID: 1.3:
+  DriveType: 4
+  No FilesystemInfo structure.
+
+Filesystem Index: 5
+Filesystem Descriptor:
+  ID's:
+    ID Type: 1
+    ID: 2.1:
+    ID Type: 4
+    ID: LEASK'S DATA:
+  DriveType: 4
+  FilesystemInfo:
+    formatType: 8
+    volumeName: Leask's Data
+
+
+*********************************

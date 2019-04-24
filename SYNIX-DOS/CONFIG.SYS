@@ -1,0 +1,11 @@
+[menu]
+menuitem=RST, [ Reset System Now!!! ]
+menuitem=MINI, [ Leask Huang's USB Disk Operating System For Princess Xiaoni ]
+menudefault=RST, -1
+menucolor=7,0
+
+[MINI]
+device=HIMEM.SYS /testmem:off
+
+[RST]
+device=HIMEM.SYS /testmem:off
